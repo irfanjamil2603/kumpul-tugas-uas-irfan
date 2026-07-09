@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Perkenalan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>My Website</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#bukutamu">Buku Tamu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Selamat Datang</h2>
+            <p>Website Perkenalan Pribadi</p>
+            <a href="#about" class="btn">Lihat Selengkapnya</a>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Perkenalkan nama saya Irfan Jamil, saya biasa dipanggil Irpan. Umur saya 19 tahun dan saya anak kedua dari 4 bersaudara. Salam kenal yaa.
+            </p>
+        </section>
+
+        <section id="profile">
+            <h2>Profile</h2>
+            <div class="profile-card">
+                <img src="asset/pan.jpg" alt="Foto Profil Irfan Jamil">
+                <div>
+                    <p><strong>Nama:</strong> Irfan Jamil</p>
+                    <p><strong>Umur:</strong> 19 Tahun</p>
+                    <p><strong>Hobi:</strong> Bermain game, membuat konten, dan berfoto</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <ul class="gallery-grid">
+                <li class="foto-card">
+                    <img src="asset/irpanspeda%20(1).jpg" alt="Foto kegiatan 1">
+                </li>
+                <li class="foto-card">
+                    <img src="asset/irpanspeda%20(2).jpg" alt="Foto kegiatan 2">
+                </li>
+                <li class="foto-card">
+                    <img src="asset/irpanspeda%20(3).jpg" alt="Foto kegiatan 3">
+                </li>
+                <li class="foto-card">
+                    <img src="asset/ir1 (1).jpeg" alt="Foto kegiatan 3">
+                </li>
+                <li class="foto-card">
+                    <img src="asset/ir1 (2).jpeg" alt="Foto kegiatan 3">
+                </li>
+                <li class="foto-card">
+                    <img src="asset/ir3.jpeg" alt="Foto kegiatan 3">
+                </li>
+            </ul>
+        </section>
+
+        <section id="video">
+            <h2>Video Saya</h2>
+            <div class="video-grid">
+                <article class="video-card">
+                    <h3>Video 1</h3>
+                    <video controls preload="metadata" poster="asset/irpanspeda%20(1).jpg">
+                        <source src="asset/garuda.mp4" type="video/quicktime">
+                        <source src="asset/garuda.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung pemutaran video.
+                    </video>
+                </article>
+
+                <article class="video-card">
+                    <h3>Video 2</h3>
+                    <video controls preload="metadata" poster="asset/irpanspeda%20(2).jpg">
+                        <source src="asset/lkmdm.mp4" type="video/quicktime">
+                        <source src="asset/lkmdm.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung pemutaran video.
+                    </video>
+                </article>
+
+                <article class="video-card">
+                    <h3>Video 3</h3>
+                    <video controls preload="metadata" poster="asset/irpanspeda%20(3).jpg">
+                        <source src="asset/mantai.mp4" type="video/quicktime">
+                        <source src="asset/mantai.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung pemutaran video.
+                    </video>
+                </article>
+
+                <article class="video-card">
+                    <h3>Video 4</h3>
+                    <video controls preload="metadata" poster="asset/irpanspeda%20(3).jpg">
+                        <source src="asset/ranau.mp4" type="video/quicktime">
+                        <source src="asset/ranau.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung pemutaran video.
+                    </video>
+                </article>
+
+                <article class="video-card">
+                    <h3>Video 5</h3>
+                    <video controls preload="metadata" poster="asset/irpanspeda%20(3).jpg">
+                        <source src="asset/css.mp4" type="video/quicktime">
+                        <source src="asset/css.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung pemutaran video.
+                    </video>
+                </article>
+            </div>
+        </section>
+
+        <section id="bukutamu">
+            <h2>Buku Tamu</h2>
+
+            <form class="guestbook">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input id="nama" name="nama" type="text" placeholder="Nama Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="umur">Umur</label>
+                    <input id="umur" name="umur" type="number" placeholder="Umur Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" placeholder="Alamat Anda" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" placeholder="Pesan Anda" required></textarea>
+                </div>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Website Saya</p>
+    </footer>
+</body>
+</html>
