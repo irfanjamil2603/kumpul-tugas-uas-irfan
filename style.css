@@ -70,6 +70,7 @@ main {
 section {
     padding: 4rem 0;
     border-bottom: 1px dashed rgba(0, 240, 255, 0.2);
+    scroll-margin-top: 90px;
 }
 
 section h2 {
@@ -168,12 +169,38 @@ section h2 {
     transform: translateY(-3px);
 }
 
+.video-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
 .video-card h3 {
     font-size: 1rem;
     color: var(--text-glow);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.2rem;
 }
 
+.video-card video {
+    display: block;
+    background: #000;
+}
+
+.video-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.video-link {
+    display: inline-block;
+    color: var(--neon-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.video-link:hover {
+    text-shadow: 0 0 6px rgba(0, 240, 255, 0.6);
+}
 
 .form-group {
     margin-bottom: 1.5rem;
